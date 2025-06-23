@@ -16,16 +16,16 @@ const AnimatedCounter = () => {
                         key={item.label}
                         className="bg-zinc-900 rounded-lg p-10 flex flex-col justify-center"
                     >
-                        <div className="counter-number text-white text-5xl font-bold mb-2">
+                        <div className="counter-number animate-gradient-text text-6xl text-center font-bold mb-2">
                             {inView && (
                                 <CountUp
                                     end={item.value}
-                                    duration={2}
+                                    duration={3}
                                     suffix={item.suffix}
                                 />
                             )}
                         </div>
-                        <div className="text-white-50 text-lg">
+                        <div className="animate-gradient-text text-xl text-center">
                             {item.label}
                         </div>
                     </div>

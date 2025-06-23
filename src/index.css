@@ -155,7 +155,7 @@ section {
     }
 
     .app-showcase {
-        @apply w-full mt-20 px-5 md:px-20 py-10 md:py-20 flex items-center justify-center;
+        @apply w-full mt-10 px-5 md:px-20 py-10 md:py-10 flex items-center justify-center;
 
         .showcaselayout {
             @apply flex xl:flex-row flex-col gap-10 justify-between;
@@ -266,7 +266,7 @@ section {
         @apply flex flex-col md:justify-center items-center xl:gap-5 xl:h-[50vh] overflow-hidden relative z-10 group-hover:cursor-grab;
 
         & p {
-            @apply text-lg 2xl:text-2xl pb-5 xl:pb-0 font-semibold text-white-50 text-center;
+            @apply text-lg 2xl:text-2xl pb-5 xl:pb-0 font-semibold text-center;
         }
     }
 
@@ -362,6 +362,37 @@ section {
     }
 }
 
+@keyframes smoothGradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-gradient-text {
+    background-image: linear-gradient(
+        -45deg,
+        #ffffff,
+        /* white */ #00ff7f,
+        /* green (spring green) */ #ffff66,
+        /* yellow */ #00bfff,
+        /* deep sky blue */ #1e90ff,
+        /* dodger blue */ #ff6347,
+        /* red (tomato) */ #ffffff,
+        /* white again for loop */ #00ff7f
+    );
+    background-size: 300% 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: smoothGradientShift 8s ease-in-out infinite;
+}
+
 /* Hero Text slider ends */
 
 .gradient-line {
@@ -396,28 +427,37 @@ section {
 
 /* marquee */
 .marquee {
-    width: 100dvw;
+    width: 100vw;
     overflow: hidden;
     position: relative;
+    height: 13rem; /* Adjust height if needed */
 }
+
 .marquee-box {
     display: flex;
     align-items: center;
-    width: 200%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    animation: marquee 60s linear infinite;
+    gap: 3rem; /* or use Tailwind class `md:gap-12 gap-5` in JSX */
+    width: fit-content;
+    animation: marqueeScroll 30s linear infinite;
 }
+
+.marquee-box:hover {
+    animation-play-state: paused;
+}
+
 .marquee-item {
-    float: left;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-@keyframes marquee {
+
+@keyframes marqueeScroll {
     0% {
-        left: 0;
+        transform: translateX(0%);
     }
     100% {
-        left: -100%;
+        transform: translateX(-50%);
     }
 }
 /* marquee end */

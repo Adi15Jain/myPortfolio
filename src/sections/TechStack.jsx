@@ -1,4 +1,3 @@
-import React from "react";
 import TitleHeader from "../components/TitleHeader";
 import { techStackIcons } from "../constants";
 import TechIcon from "../components/Models/TechLogos/TechIcon";
@@ -34,14 +33,14 @@ const TechStack = () => {
                     {techStackIcons.map((icon) => (
                         <div
                             key={icon.name}
-                            className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg "
+                            className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
                         >
                             <div className="tech-card-animated-bg" />
                             <div className="tech-card-content">
                                 <div className="tech-icon-wrapper">
                                     <TechIcon model={icon} />
                                 </div>
-                                <div className="padding-x w-full">
+                                <div className="padding-x w-full animate-gradient-text">
                                     <p>{icon.name}</p>
                                 </div>
                             </div>
