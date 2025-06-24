@@ -57,7 +57,7 @@ const ShowcaseSection = () => {
                             <h1>
                                 PneumoAI — Pneumonia Detection from Chest X-rays
                             </h1>
-                            <p className="text-white-50 md:text-xl">
+                            <p>
                                 PneumoAI is a full-stack deep learning web
                                 application that diagnoses pneumonia from chest
                                 X-ray images using a custom-trained

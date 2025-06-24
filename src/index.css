@@ -179,8 +179,11 @@ section {
                     @apply flex gap-2 mb-4;
                 }
 
-                h2 {
+                h1 {
                     @apply text-2xl md:text-3xl lg:text-4xl font-bold;
+                }
+                p {
+                    @apply text-white-50 md:text-lg;
                 }
             }
         }

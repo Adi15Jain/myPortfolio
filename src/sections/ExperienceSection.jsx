@@ -94,7 +94,7 @@ const ExperienceSection = () => {
                                                 <h1 className="font-semibold text-3xl">
                                                     {card.title}
                                                 </h1>
-                                                <p className="my-50 text-white-50">
+                                                <p className="my-15 text-white-50">
                                                     🗓️ {card.date}
                                                 </p>
                                                 <p className="text-[839CB5] italic">

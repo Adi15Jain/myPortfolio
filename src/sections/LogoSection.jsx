@@ -1,3 +1,4 @@
+import TitleHeader from "../components/TitleHeader";
 import { logoIconsList } from "../constants";
 
 const LogoIcon = ({ icon }) => {
@@ -14,7 +15,12 @@ const LogoSection = () => {
             <div className="gradient-edge" />
             <div className="gradient-edge" />
 
-            <div className="marquee h-52">
+            <TitleHeader
+                title={"Frequently Used Tools"}
+                sub={"📌 Deliverables and"}
+            />
+
+            <div className="marquee h-52 mt-20">
                 <div className="marquee-box md:gap-12 gap-5">
                     {logoIconsList.map((icon, index) => (
                         <LogoIcon
