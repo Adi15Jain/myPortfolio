@@ -87,7 +87,7 @@ const ExperienceSection = () => {
                                                 <img
                                                     src={card.logoPath}
                                                     alt="logo"
-                                                    className="rounded-full -ml-3"
+                                                    className="rounded-full lg:mr-3"
                                                 />
                                             </div>
                                             <div>
