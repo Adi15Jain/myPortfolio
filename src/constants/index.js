@@ -164,15 +164,15 @@ const expCards = [
         ],
     },
     {
-        review: "My time at CETPA, Noida was incredibly enriching. I gained practical exposure to core AI concepts and tools like Python, TensorFlow, and OpenCV. This training laid the foundation for my interest in intelligent systems and real-world AI applications.",
-        imgPath: "/images/download4.png",
-        logoPath: "/images/download3.jpg",
-        title: "Artificial Intelligence Intern",
-        date: "June 2024 - August 2024",
+        review: "My internship at EvoAstra Private Ventures Pvt. Ltd. was highly impactful and industry-oriented. I worked on real-world data science problems involving data preprocessing, exploratory data analysis, and predictive modeling, which strengthened my analytical thinking and problem-solving skills.",
+        imgPath: "/images/download3.png",
+        logoPath: "/images/download4.jpeg",
+        title: "Data Science Intern",
+        date: "September 2025 - December 2025",
         responsibilities: [
-            "Completed practical training in Artificial Intelligence at CETPA, Noida.",
-            "Learned key AI tools and technologies including Python, OpenCV, and TensorFlow.",
-            "Built a solid foundation in machine learning algorithms and neural networks.",
+            "Worked as a Data Science Intern at EvoAstra Private Ventures Pvt. Ltd. on real-world datasets.",
+            "Performed data cleaning, preprocessing, and exploratory data analysis (EDA) using Python.",
+            "Collaborated with the team to interpret results and present data-driven recommendations.",
         ],
     },
 ];

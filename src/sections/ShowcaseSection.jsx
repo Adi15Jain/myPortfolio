@@ -51,7 +51,12 @@ const ShowcaseSection = () => {
                     {/* LEFT */}
                     <div className="first-project-wrapper" ref={project1Ref}>
                         <div className="image-wrapper">
-                            <img src="/images/project1.png" alt="pneumoai" />
+                            <a href="https://www.youtube.com/watch?v=ppJ2CQorY5g">
+                                <img
+                                    src="/images/project1.png"
+                                    alt="pneumoai"
+                                />
+                            </a>
                         </div>
                         <div className="text-content">
                             <h1>
@@ -81,13 +86,15 @@ const ShowcaseSection = () => {
                         </div>
 
                         <div className="project" ref={project3Ref}>
-                            <div className="image-wrapper bg-[#ffe7eb]">
-                                <img
-                                    src="/images/project3.png"
-                                    alt="image-particle"
-                                />
+                            <div className=" bg-black">
+                                <a href="https://coin-push.vercel.app/">
+                                    <img
+                                        src="/images/project3.png"
+                                        alt="CoinPush"
+                                    />
+                                </a>
                             </div>
-                            <h2>Image Particle Effect: An Intro to Three.JS</h2>
+                            <h2>CoinPush: CryptoCurrency Screening App</h2>
                         </div>
                     </div>
                 </div>
