@@ -441,7 +441,7 @@ section {
     align-items: center;
     gap: 3rem; /* or use Tailwind class `md:gap-12 gap-5` in JSX */
     width: fit-content;
-    animation: marqueeScroll 30s linear infinite;
+    animation: marqueeScroll 20s linear infinite;
 }
 
 .marquee-box:hover {
@@ -485,7 +485,8 @@ section {
     border: 2px solid transparent;
     background: var(--gradient);
     background-attachment: fixed;
-    mask: linear-gradient(#0000, #0000),
+    mask:
+        linear-gradient(#0000, #0000),
         conic-gradient(
             from calc((var(--start) - 15) * 1deg),
             #ffffff1f 0deg,
