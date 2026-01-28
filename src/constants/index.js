@@ -29,10 +29,10 @@ const words = [
 ];
 
 const counterItems = [
-    { value: 10, suffix: "+", label: "Completed Projects" },
-    { value: 1000, suffix: "+", label: "Hours of Practical Learning" },
+    { value: 15, suffix: "+", label: "Completed Projects" },
+    { value: 5000, suffix: "+", label: "Hours of Practical Learning" },
     { value: 12, suffix: "+", label: "Technical Certifications Earned" },
-    { value: 20, suffix: "+", label: "Tools & Technologies Used" },
+    { value: 25, suffix: "+", label: "Tools & Technologies Used" },
 ];
 
 const logoIconsList = [
