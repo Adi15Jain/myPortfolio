@@ -32,14 +32,14 @@ const ShowcaseSection = () => {
                         trigger: card,
                         start: "top bottom -=100",
                     },
-                }
+                },
             );
         });
 
         gsap.fromTo(
             sectionRef.current,
             { opacity: 0 },
-            { opacity: 1, duration: 1.5 }
+            { opacity: 1, duration: 1.5 },
         );
     }, []);
 
@@ -51,7 +51,10 @@ const ShowcaseSection = () => {
                     {/* LEFT */}
                     <div className="first-project-wrapper" ref={project1Ref}>
                         <div className="image-wrapper">
-                            <a href="https://www.youtube.com/watch?v=ppJ2CQorY5g">
+                            <a
+                                href="https://www.youtube.com/watch?v=ppJ2CQorY5g"
+                                target="_blank"
+                            >
                                 <img
                                     src="/images/project1.png"
                                     alt="pneumoai"
@@ -87,7 +90,10 @@ const ShowcaseSection = () => {
 
                         <div className="project" ref={project3Ref}>
                             <div className=" bg-black">
-                                <a href="https://coin-push.vercel.app/">
+                                <a
+                                    href="https://coin-push.vercel.app/"
+                                    target="_blank"
+                                >
                                     <img
                                         src="/images/project3.png"
                                         alt="CoinPush"
